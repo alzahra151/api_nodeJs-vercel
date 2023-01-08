@@ -1,0 +1,24 @@
+{
+  "name": "ecommerceproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "set jwt_SECRET=jndjfnnbnfdjiwqkkasjaha && nodemon index.js",
+    "test": "jasmine"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.7.0",
+    "nodemon": "^2.0.20",
+    "supertest": "^6.3.1"
+  },
+  "devDependencies": {
+    "jasmine": "^4.5.0"
+  }
+}
