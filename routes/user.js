@@ -1,7 +1,7 @@
 var userModel = require("../models/User")
 var {verifyToken}=require("../middlewares/authuntication")
 var {userRolles}=require("../middlewares/authorization")
-var bcrypt = require('bcrypt')
+var bcrypt = require('bcryptjs')
 var jwt = require('jsonwebtoken')
 
 const router = require('express').Router()
