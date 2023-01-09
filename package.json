@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "set jwt_SECRET=jndjfnnbnfdjiwqkkasjaha && nodemon index.js",
+    "start": "set jwt_SECRET=jndjfnnbnfdjiwqkkasjaha && node index.js",
     "test": "jasmine"
   },
   "author": "",
