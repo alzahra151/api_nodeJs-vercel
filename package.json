@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node":"14.x"
+  },
   "scripts": {
     "start": "set jwt_SECRET=jndjfnnbnfdjiwqkkasjaha && node index.js",
     "test": "jasmine"
