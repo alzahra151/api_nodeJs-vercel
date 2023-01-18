@@ -5,7 +5,7 @@ var {chekIsSeller}=require("../middlewares/authorization")
 var jwt = require('jsonwebtoken')
 const router = require('express').Router()
 require('dotenv').config()
-console.log(process.env)
+
 router.post('/signIn', async (req, res) => {
     let pass = req.body.password
     let seller = await sellerModel.create(req.body)
