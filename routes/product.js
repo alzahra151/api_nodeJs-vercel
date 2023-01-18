@@ -3,11 +3,13 @@ var userModel=require("../models/User")
 const router = require('express').Router()
 var { verifyToken  } = require("../middlewares/authuntication")
 var {chekIsSeller} =require("../middlewares/authorization")
-
+require('dotenv').config()
+console.log(process.env)
 router.get('/', async (req, res, next) => {
     try {
         let products = await productModel.find({})
         res.status(200).json(products)
+        console.log(process.env.jwt_SECRET)
     } catch (err) {
         res.status(501).json(err)
     }
