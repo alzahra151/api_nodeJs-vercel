@@ -4,7 +4,7 @@ const router = require('express').Router()
 var { verifyToken  } = require("../middlewares/authuntication")
 var {chekIsSeller} =require("../middlewares/authorization")
 require('dotenv').config()
-console.log(process.env)
+
 router.get('/', async (req, res, next) => {
     try {
         let products = await productModel.find({})
