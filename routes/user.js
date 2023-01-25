@@ -4,7 +4,7 @@ var {userRolles}=require("../middlewares/authorization")
 var bcrypt = require('bcryptjs')
 var jwt = require('jsonwebtoken')
 require('dotenv').config()
-console.log(process.env)
+
 const router = require('express').Router()
 
 router.post('/signIn', async (req, res) => {
