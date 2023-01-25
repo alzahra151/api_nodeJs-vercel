@@ -1,7 +1,7 @@
 var express=require('express')
 var app=express()
 var mongoose = require('mongoose')
-mongoose.connect('mongodb://127.0.0.1:27017/Ecommerce')
+mongoose.connect('mongodb+srv://alzahraa:alzahraa151@ecommerce.lnb4fzj.mongodb.net/test')
 var cors=require('cors')
 var productRoute=require("./routes/product")
 var userRoute=require("./routes/user")
